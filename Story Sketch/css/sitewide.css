@@ -1,0 +1,139 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
+	color:000000;
+}
+
+h1{
+	font-size: 120px;
+	line-height: 1.7em;
+	color:yellow;
+	opacity: 90%;
+	text-align: center;
+	font-family: 'Notable', sans-serif;
+}
+
+p{
+	background-color: rgba(255, 255, 255, 0.8);
+	font-size: 16px;
+	line-height:1.5em;
+	font-family:'Ubuntu', sans-serif;
+	color:rgba(0, 0, 0, 0.6);
+	text-align:left;
+	padding:20px;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.container {
+	background-color:white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-black{
+	background-color: #000000;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row:auto;
+	padding-bottom: 0;
+	display:grid;
+	margin-right:10px;
+}
+
+.box-home {
+	background-image: url("../img/Bauhaus.jpg");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: auto;
+}
+
+.sub {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
+}
+
+.Bauhaus{
+	padding-top: 60px;
+	display:grid;
+	font-size: 30px;
+	text-align: center;
+	grid-column: 2/3;
+}
+.global-nav ul{
+	padding:2em;
+	display:flex;
+	font-family: 'Notable', sans-serif;
+}
+
+.global-nav li{
+	list-style-type: none;
+	text-align: center;
+	flex:3 1 300px;
+	flex-wrap:wrap;
+	min-width: 300px;
+	font-family: 'Notable', sans-serif;
+}
+
+.global-nav a {
+	background: #303030;
+	color:#FFFFFF;
+	text-decoration: none;
+	display: block;
+	padding:1em;
+	font-family: 'Notable', sans-serif;
+}
+
+
+/* ------------------------------------------------------------ */
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	/*.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2em;
+		border: 1px solid #ddd;
+	}
+
+} /* end media query */
