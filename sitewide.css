@@ -1,0 +1,295 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/*
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5em;
+	color:000000;
+}
+
+h1{
+	font-size: 60px;
+	opacity: 90%;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica;
+}
+
+h2{
+	font-size: 70px;
+	color:white;
+	opacity: 90%;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-style:italic;
+}
+
+h3{
+	font-size: 50px;
+	opacity: 90%;
+	text-align: center;
+	font-family: 'Notable', sans-serif;
+}
+
+h4{
+	font-size: 27px;
+	line-height:1.7em;
+	font-family:'Ubuntu', sans-serif;
+	text-align:center;
+	letter-spacing: 2px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+p{
+	font-size: 17px;
+	line-height:1.55em;
+	font-family:'Ubuntu', sans-serif;
+	text-align:left;
+	padding:20px;
+	letter-spacing: 2.2px;
+}
+
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area.
+	If you have more than one container, you are probably doing
+	something wrong.
+*/
+.container {
+	background-color:white;
+}
+
+.box-title{
+	display:grid;
+	grid-template-columns: auto auto;
+	grid-template-rows:auto auto auto;
+	background-color: #000000;
+	font-family: 'Notable', sans-serif;
+	color:yellow;
+}
+
+.box-title-history{
+		display:grid;
+		grid-template-columns: auto auto;
+		grid-template-rows:auto auto auto;
+		background-color: #000000;
+		font-family: 'Notable', sans-serif;
+		color:#11528F;
+	}
+
+
+.box-title-architecture{
+			display:grid;
+			grid-template-columns: auto auto;
+			grid-template-rows:auto auto auto;
+			background-color: #FFFFFF;
+			font-family: 'Notable', sans-serif;
+			color:#303030;
+		}
+
+.box-title-painting{
+					display:grid;
+					grid-template-columns: auto auto;
+					grid-template-rows:auto auto auto;
+					background-color: #000000;
+					font-family: 'Notable', sans-serif;
+					color:#BF4215;
+				}
+
+.box-black{
+	background-color: #000000;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row:auto;
+	padding-bottom: 0;
+	display:grid;
+	grid-row: 2/3;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	padding-left:120px;
+	padding-right:120px;
+	color:rgba(255, 255, 255, 0.6);
+}
+
+.box-home {
+	background-image: url("../img/Bauhaus2.jpg");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 3/3;
+	background-size: cover;
+}
+
+.sub {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows:0.2fr 1fr 1fr;
+}
+
+.Bauhaus{
+	padding-top: 100px;
+	display:grid;
+	text-align: center;
+	grid-row: 2/3;
+	margin-left: 150px;
+	margin-right: 150px;
+	background-color: rgba(246, 204, 0, 0.7);
+	color:white;
+	text-align:left;
+	padding:20px;
+	letter-spacing: 2px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.global-nav ul{
+	padding:1em;
+	display:flex;
+	font-family: 'Notable', sans-serif;
+	font-size: 20px;
+}
+
+.global-nav li{
+	list-style-type: none;
+	text-align: center;
+	flex:3 1 300px;
+	flex-wrap:wrap;
+	min-width: 200px;
+	font-family: 'Notable', sans-serif;
+}
+
+.global-nav a {
+	background: #303030;
+	color:#FFFFFF;
+	text-decoration:none;
+	display: block;
+	padding:1em;
+	font-family: 'Notable', sans-serif;
+}
+/* -----------------------HISTORY PAGE------------------------------------- */
+
+.box-movement{
+	background-image: url("../img/history.jpg");
+	background-size:auto;
+	background-repeat: no-repeat;
+	background-position:top;
+	background-attachment: fixed;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.movement{
+	display:grid;
+	text-align: center;
+	margin-left: 150px;
+	margin-right: 150px;
+	background-color: rgba(17, 82, 143, 0.6);
+	color:white;
+	text-align:left;
+	padding:70px;
+	letter-spacing: 2px;
+}
+
+
+.weimar{
+	padding-top:30px;
+	padding-left: 150px;
+	padding-right: 150px;
+	color:black;
+}
+
+.photo_G{
+	text-align: center;
+	padding-bottom: 30px;
+	padding-left: 150px;
+	padding-right: 150px;
+	border-bottom: 30px solid black;
+}
+
+.photo_D{
+	text-align: center;
+	padding-bottom: 30px;
+	border-bottom: 30px solid black;
+}
+
+.photo_M{
+	text-align: center;
+	padding-bottom: 30px;
+	border-bottom: 30px solid black;
+}
+
+.Dessau{
+	padding-left: 150px;
+	padding-right: 150px;
+	color:black;
+}
+
+.Berlin{
+	padding-left: 150px;
+	padding-right: 150px;
+	color:black;
+}
+
+/* ---------------------------ARCHITECTURE PAGE--------------------------------- */
+.box-school{
+	background-image: url("../img/school.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 120px;
+	padding-bottom: 700px;
+	color:#1f1f1f;
+}
+.paragraph{
+	margin-top: 350px;
+	text-align: center;
+	padding-left:100px;
+	padding-right:100px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: white;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-indent: 50px;
+}
+/* media query containing styles for larger screens */
+@media (min-width: 720px) {
+
+	/* container on larger screens */
+	/*.container {
+		width: 90%;
+		max-width: 1200px;
+		margin: 2em;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2em;
+		border: 1px solid #ddd;
+	}
+
+} /* end media query */
