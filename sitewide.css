@@ -33,7 +33,7 @@ body {
 }
 
 h1{
-	font-size: 60px;
+	font-size: 50px;
 	opacity: 90%;
 	text-align: center;
 	font-family: "Helvetica Neue", Helvetica;
@@ -66,7 +66,6 @@ h4{
 }
 
 p{
-	font-size: 17px;
 	line-height:1.55em;
 	font-family:'Ubuntu', sans-serif;
 	text-align:left;
@@ -90,7 +89,7 @@ p{
 	grid-template-rows:auto auto auto;
 	background-color: #000000;
 	font-family: 'Notable', sans-serif;
-	color:yellow;
+	color:#F6CC00;
 }
 
 .box-title-history{
@@ -121,6 +120,34 @@ p{
 					color:#BF4215;
 				}
 
+
+
+.global-nav ul{
+					padding:1em;
+					display:flex;
+					font-family: 'Notable', sans-serif;
+					font-size: 20px;
+				}
+
+.global-nav li{
+					list-style-type: none;
+					text-align: center;
+					flex:3 1 300px;
+					flex-wrap:wrap;
+					min-width: 200px;
+					font-family: 'Notable', sans-serif;
+				}
+
+.global-nav a {
+					background: #303030;
+					color:#FFFFFF;
+					text-decoration:none;
+					display: block;
+					padding:1em;
+					font-family: 'Notable', sans-serif;
+				}
+/* -----------------------HOME PAGE------------------------------------- */
+
 .box-black{
 	background-color: #000000;
 	grid-column-start: 1;
@@ -133,7 +160,17 @@ p{
 	padding-bottom: 100px;
 	padding-left:120px;
 	padding-right:120px;
-	color:rgba(255, 255, 255, 0.6);
+	color:rgba(255, 255, 255);
+	background-image: url("../img/yellow2.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.words{
+	padding:30px;
+	margin:30px;
+
 }
 
 .box-home {
@@ -150,7 +187,7 @@ p{
 .sub {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows:0.2fr 1fr 1fr;
+	grid-template-rows:0.5fr 1fr 0.5fr;
 }
 
 .Bauhaus{
@@ -160,7 +197,7 @@ p{
 	grid-row: 2/3;
 	margin-left: 150px;
 	margin-right: 150px;
-	background-color: rgba(246, 204, 0, 0.7);
+	background-color: rgba(199, 166, 6, 0.8);
 	color:white;
 	text-align:left;
 	padding:20px;
@@ -168,30 +205,7 @@ p{
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
-.global-nav ul{
-	padding:1em;
-	display:flex;
-	font-family: 'Notable', sans-serif;
-	font-size: 20px;
-}
 
-.global-nav li{
-	list-style-type: none;
-	text-align: center;
-	flex:3 1 300px;
-	flex-wrap:wrap;
-	min-width: 200px;
-	font-family: 'Notable', sans-serif;
-}
-
-.global-nav a {
-	background: #303030;
-	color:#FFFFFF;
-	text-decoration:none;
-	display: block;
-	padding:1em;
-	font-family: 'Notable', sans-serif;
-}
 /* -----------------------HISTORY PAGE------------------------------------- */
 
 .box-movement{
@@ -229,21 +243,25 @@ p{
 	padding-bottom: 30px;
 	padding-left: 150px;
 	padding-right: 150px;
-	border-bottom: 30px solid black;
 }
 
 .photo_D{
 	text-align: center;
 	padding-bottom: 30px;
-	border-bottom: 30px solid black;
+	margin-bottom: 70px;
 }
 
 .photo_M{
 	text-align: center;
 	padding-bottom: 30px;
-	border-bottom: 30px solid black;
 }
-
+.angle{
+	border-top: 70px solid #11528F;
+	border-bottom:70px solid #11528F;
+	border-left:70px solid #11528F;
+	border-right:70px solid #11528F;
+	text-align:center;
+}
 .Dessau{
 	padding-left: 150px;
 	padding-right: 150px;
@@ -279,27 +297,26 @@ p{
 	text-indent: 50px;
 }
 
-/* ---------------------------IMPACT PAGE--------------------------------- */
-
-.box-wei{
+.box-more{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	padding-left:100px;
 	padding-right:100px;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 40px;
+	padding-bottom:40px;
+	grid-gap:20px;
+	background-color: #303030;
+	color:white;
+
 }
 
-.para2{
-		grid-column:1/2;
-}
-.quote{
-	color:#BF4215;
-}
-
-.photo_wei{
+.photo_wei2{
 	grid-column:2/2;
+	grid-row:1/1;
+	background-color:white;
+	padding:40px;
+	padding-top: 70px;
 }
 
 .para{
@@ -307,10 +324,158 @@ p{
 	grid-row: 2/2;
 }
 
+.photo_100{
+	grid-column: 1/1;
+	grid-row: 2/2;
+	background-color:white;
+	align-content: center;
+	padding:40px;
+	padding-top: 70px;
+}
+.para2{
+		grid-column:1/1;
+		grid-row: 1/1;
+}
+.quote{
+	color:white;
+}
+
+blockquote{
+  font-size: 30px;
+  background: #303030;
+  margin: .5em 10px;
+  padding: 0 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+
+blockquote:before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: white;
+  font-size: 3em;
+}
+
+h4{
+	margin:0;
+}
+
+
+
+/* ---------------------------IMPACT PAGE--------------------------------- */
+
+.box-summary{
+	padding-top: 300px;
+	padding: 50px;
+	grid-template-rows:auto auto;
+	background-image: url("../img/pink3.gif");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+.summary{
+	background-color: rgba(0,0,0,0.3);
+	color:white;
+	padding-top:50px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-bottom: 70px;
+	margin-top: 70px;
+	font-size: 22px;
+}
+
+.box-education{
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.grid2{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.walter{
+	grid-column: 2/2;
+	grid-row: 1/1;
+}
+
+.photo_wei{
+	grid-column: 1/1;
+	grid-row: 1/1;
+}
+
+
+.box-furniture{
+	margin-top: 100px;
+	margin-left: 40px;
+	margin-right:40px;
+}
+.grid{
+	margin-top: 20px;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding-left:100px;
+	padding-right:100px;
+	padding-bottom: 70px;
+}
+
 .photo_Barcelona{
-	grid-column: 1/2;
+	grid-column: 2/2;
+	padding-top: 30px;
+	grid-row: 1/1;
+}
+
+.contribution{
+	grid-column: 1/1;
+	grid-row: 1/1;
+}
+
+.As{
+	grid-column: 2/2;
 	grid-row: 2/2;
 }
+
+.photo_archive{
+	grid-column: 1/1;
+	grid-row: 2/2;
+}
+
+.box-2019{
+	grid-template-rows:auto auto;
+	background-image: url("../img/book.gif");
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	grid-template-columns: 1fr 1fr;
+	display:grid;
+}
+
+.physical{
+	grid-column: 1/1;
+	padding-left: 30px;
+	background-color: white;
+	margin-top: 60px;
+	margin-left: 70px;
+	margin-right: 100px;
+	margin-bottom: 60px;
+	padding:30px;
+}
+
 
 /* media query containing styles for larger screens */
 @media (min-width: 720px) {
